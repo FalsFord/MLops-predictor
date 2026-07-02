@@ -3,10 +3,8 @@
 Сервис для предсказания прогрессии диабета на основе 10 клинических признаков.  
 Архитектура: **FastAPI** → **MLServer** (V2 Inference Protocol) → **MLflow** (Model Registry) + **MinIO** (артефакты) +\*
 *PostgreSQL*\* (метаданные).
-
-
-
-\---
+\
+---
 
 ## 📋 Содержание
 
@@ -20,7 +18,8 @@
 * [Разработка](#разработка)
 * 
 
-\---
+\
+---
 
 ## 🏗 Архитектура
 
@@ -53,7 +52,8 @@
 3. `fastapi-app` принимает запросы, проксирует их в MLServer по V2 Inference Protocol
 4. `mlflow-server` + `postgres` + `minio` хранят эксперименты, метрики и артефакты
 
-\---
+\
+---
 
 ## 🛠 Технологический стек
 
@@ -67,7 +67,8 @@
 |**Database**|PostgreSQL 15|Хранение метаданных MLflow|
 |**Orchestration**|Docker Compose|Запуск всего стека|
 
-\---
+\
+---
 
 ## 📁 Структура проекта
 
@@ -92,7 +93,8 @@
 └── README.md
 ```
 
-\---
+\
+---
 
 ## ⚡Как запустить
 
@@ -150,7 +152,8 @@ curl -X POST http://localhost:8000/predict \\\\
 }
 ```
 
-\---
+\
+---
 
 ## 📡 Эндпоинты
 
@@ -167,7 +170,8 @@ curl -X POST http://localhost:8000/predict \\\\
 |-|-|-|
 |`features`|`list\\\[float]`|Массив из **10 чисел** (нормализованные признаки датасета Diabetes)|
 
-\---
+\
+---
 
 ## 🔍 MLflow UI
 
@@ -180,7 +184,8 @@ curl -X POST http://localhost:8000/predict \\\\
 * Зарегистрированную модель `DiabetesLinearRegression`
 * Метрики (MSE, R²) и артефакты
 
-\---
+\
+---
 
 ## 🧪 Примеры запросов
 
@@ -202,7 +207,8 @@ curl -X POST http://localhost:8000/predict \\\\
 
 Откройте `http://localhost:8000/docs` → разверните `/predict` → **Try it out**
 
-\---
+\
+---
 
 ## 🛠 Разработка
 
@@ -234,7 +240,8 @@ docker compose up --build
 docker compose down -v
 ```
 
-\---
+\
+---
 
 ## 
 

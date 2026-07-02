@@ -163,7 +163,7 @@ curl -X POST http://localhost:8000/predict \\\\
 
 |Поле|Тип|Описание|
 |-|-|-|
-|`features`|`list\\\[float]`|Массив из **10 чисел** (нормализованные признаки датасета Diabetes)|
+|`features`|`list[float]`|Массив из **10 чисел** (нормализованные признаки датасета Diabetes)|
 
 ---
 
@@ -174,7 +174,7 @@ curl -X POST http://localhost:8000/predict \\\\
 
 Там можно посмотреть:
 
-* Эксперимент `diabetes\\\_prediction`
+* Эксперимент `diabetes_prediction`
 * Зарегистрированную модель `DiabetesLinearRegression`
 * Метрики (MSE, R²) и артефакты
 

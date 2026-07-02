@@ -72,14 +72,14 @@
 ```
 .
 ├── app/
-│   ├── \\\_\\\_init\\\_\\\_.py
+│   ├── __init__.py
 │   ├── router.py              # Эндпоинты /predict и /health
 │   └── schemas.py             # Pydantic-схемы запросов/ответов
-├── mlserver\\\_config/
+├── mlserver_config/
 │   ├── model-settings.json    # Конфиг MLServer (кастомный runtime)
 │   └── models.py              # DiabetesRuntime — загрузка модели из MLflow
 ├── main.py                    # Точка входа FastAPI
-├── train\\\_model.py             # Обучение модели и публикация в MLflow
+├── train_model.py             # Обучение модели и публикация в MLflow
 ├── docker-compose.yml         # Полный стек инфраструктуры
 ├── Dockerfile                 # FastAPI-сервис
 ├── Dockerfile.mlserver        # MLServer с кастомным runtime

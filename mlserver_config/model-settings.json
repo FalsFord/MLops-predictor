@@ -1,0 +1,4 @@
+{
+    "name": "diabetes-model",
+    "implementation": "models.DiabetesRuntime"
+}

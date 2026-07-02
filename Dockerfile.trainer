@@ -1,0 +1,5 @@
+FROM python:3.12-slim
+WORKDIR /app
+RUN pip install mlflow scikit-learn boto3
+COPY train_model.py .
+CMD ["python", "train_model.py"]

@@ -1,0 +1,7 @@
+FROM seldonio/mlserver:1.7.0
+
+RUN pip install --upgrade mlflow boto3 scikit-learn==1.7.2 numpy
+
+COPY mlserver_config/ /models/
+
+WORKDIR /models

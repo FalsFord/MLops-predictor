@@ -190,12 +190,18 @@ curl -X POST http://localhost:8000/predict \
 ```bash
 curl http://localhost:8000/health
 ```
-📸 Скриншоты
+### 📸 Скриншоты
+
 Интерфейс Swagger UI — отправка запроса `/predict`
+
 ![picture1](images/picture1.png)
+
 Ответ сервера на запрос `/predict`
+
 ![picture2](images/picture3.png)
+
 Проверка работоспособности эндпоинта `/health`
+
 ![picture3](images/picture2.png)
 
 ### Предсказание

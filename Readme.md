@@ -134,9 +134,9 @@ curl http://localhost:8000/health
 ### 4\. Предсказание
 
 ```bash
-curl -X POST http://localhost:8000/predict \\\\
-  -H "Content-Type: application/json" \\\\
-  -d '{"features": \\\[0.1, -0.24, 0.55, 0.01, -0.04, 0.02, 0.06, 0.08, 0.02, 0.01]}'
+curl -X POST http://localhost:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"features": [0.1, -0.24, 0.55, 0.01, -0.04, 0.02, 0.06, 0.08, 0.02, 0.01]}'
 ```
 
 **Ожидаемый ответ:**
@@ -190,8 +190,8 @@ curl http://localhost:8000/health
 ### Предсказание
 
 ```bash
-curl -X POST http://localhost:8000/predict \\\\
-  -H "Content-Type: application/json" \\\\
+curl -X POST http://localhost:8000/predict \
+  -H "Content-Type: application/json" \
   -d '{"features": \\\[0.1, -0.24, 0.55, 0.01, -0.04, 0.02, 0.06, 0.08, 0.02, 0.01]}'
 ```
 
@@ -212,7 +212,7 @@ curl -X POST http://localhost:8000/predict \\\\
 pip install -r requirements.txt
 
 # Обучение модели (один раз)
-python train\\\_model.py
+python train_model.py
 
 # Запуск FastAPI
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload

@@ -74,6 +74,10 @@
 │   ├── __init__.py
 │   ├── router.py              # Эндпоинты /predict и /health
 │   └── schemas.py             # Pydantic-схемы запросов/ответов
+├── images/                    # Скриншоты для документации
+│   ├── picture1.png
+│   ├── picture2.png
+│   └── picture3.png
 ├── mlserver_config/
 │   ├── model-settings.json    # Конфиг MLServer (кастомный runtime)
 │   └── models.py              # DiabetesRuntime — загрузка модели из MLflow
@@ -186,6 +190,13 @@ curl -X POST http://localhost:8000/predict \
 ```bash
 curl http://localhost:8000/health
 ```
+📸 Скриншоты
+Интерфейс Swagger UI — отправка запроса `/predict`
+![picture1](images/picture1.png)
+Ответ сервера на запрос `/predict`
+![picture2](images/picture3.png)
+Проверка работоспособности эндпоинта `/health`
+![picture3](images/picture2.png)
 
 ### Предсказание
 

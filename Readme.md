@@ -1,8 +1,7 @@
 # 🚀 Diabetes Prediction API
 
 Сервис для предсказания прогрессии диабета на основе 10 клинических признаков.  
-Архитектура: **FastAPI** → **MLServer** (V2 Inference Protocol) → **MLflow** (Model Registry) + **MinIO** (артефакты) + *
-*PostgreSQL** (метаданные).
+Архитектура: **FastAPI** → **MLServer** (V2 Inference Protocol) → **MLflow** (Model Registry) + **MinIO** (артефакты) + **PostgreSQL** (метаданные).
 
 ---
 
